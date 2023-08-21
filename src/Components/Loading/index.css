@@ -1,0 +1,74 @@
+#loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    scale: 7;
+}
+
+#loading-screen .snippet .stage h5 {
+    font-family: var(--primary-font);
+    font-size: x-small;
+    font-weight: 900;
+    margin-left: -0.5rem;
+}
+
+.stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px 35px;
+    overflow: hidden;
+}
+
+.dot-spin {
+    position: relative;
+    width: 9px;
+    height: 9px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: transparent;
+    box-shadow: 0 -18px 0 0 #000, 12.727926px -12.727926px 0 0 #000, 18px 0 0 0 #000, 12.727926px 12.727926px 0 0 rgba(152, 128, 255, 0), 0 18px 0 0 rgba(152, 128, 255, 0), -12.727926px 12.727926px 0 0 rgba(152, 128, 255, 0), -18px 0 0 0 rgba(152, 128, 255, 0), -12.727926px -12.727926px 0 0 rgba(152, 128, 255, 0);
+    animation: dot-spin 3s infinite linear, dot-fade-in 3s infinite linear;;
+}
+  
+@keyframes dot-spin {
+    0%, 100% {
+      box-shadow: 0 -18px 0 0 #000, 12.727926px -12.727926px 0 0 #000, 18px 0 0 0 #000, 12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0);
+      opacity: 0.5;
+    }
+    12.5% {
+      box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.727926px -12.727926px 0 0 #000, 18px 0 0 0 #000, 12.727926px 12.727926px 0 0 #000, 0 18px 0 -5px rgba(152, 128, 255, 0), -12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0);
+    }
+    25% {
+      box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 0 #000, 12.727926px 12.727926px 0 0 #000, 0 18px 0 0 #000, -12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0);
+    }
+    37.5% {
+      box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.727926px 12.727926px 0 0 #000, 0 18px 0 0 #000, -12.727926px 12.727926px 0 0 #000, -18px 0 0 -5px rgba(152, 128, 255, 0), -12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0);
+    }
+    50% {
+      box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 0 #000, -12.727926px 12.727926px 0 0 #000, -18px 0 0 0 #000, -12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0);
+    }
+    62.5% {
+      box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.727926px 12.727926px 0 0 #000, -18px 0 0 0 #000, -12.727926px -12.727926px 0 0 #000;
+    }
+    75% {
+      box-shadow: 0 -18px 0 0 #000, 12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 0 #000, -12.727926px -12.727926px 0 0 #000;
+    }
+    87.5% {
+      box-shadow: 0 -18px 0 0 #000, 12.727926px -12.727926px 0 0 #000, 18px 0 0 -5px rgba(152, 128, 255, 0), 12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.727926px -12.727926px 0 0 #000;
+    }
+}
+
+@keyframes dot-fade-in {
+  50% {
+    opacity: 1;
+    /* Dots become fully visible at 50% of the animation */
+  }
+}
+
+@media (max-width: 768px) {
+  
+}

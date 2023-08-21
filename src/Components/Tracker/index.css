@@ -1,0 +1,122 @@
+#header {
+    padding-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#tracker-line {
+    display: none;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+#tracker-line #stepper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#tracker-line #stepper li {
+    color: #000;
+}
+
+#tracker-line #stepper li > span {
+    position: relative;
+    display: block;
+    color: #000;
+    width: 5vw;
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+    font-weight: 900;
+    font-size: 12px;
+    margin-left: -2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#tracker-line #stepper li::marker {
+    font-size: 2em;
+}
+
+#tracker-line #stepper li.line {
+    text-align: center;
+    list-style-type: none;
+    height: 2.5px;
+    width: 1000px;
+    margin-right: -2px;
+    margin-top: 9px;
+    margin-left: -1px;
+    background-color: #000;
+}
+
+#tracker-line #stepper li.line.active-line {
+    background-color: #000;
+}
+
+#tracker-line #stepper li.line.inactive-line {
+    background-color: #B3B3B3;
+    ;
+}
+
+#tracker-line #stepper li.active-step {
+    color: transparent;
+    border: 2px solid #000;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin-left: 2px;
+}
+
+#tracker-line #stepper li.inactive-step {
+    color: transparent;
+    border: 2px solid #B3B3B3;
+    background-color: #B3B3B3;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin-left: 2px;
+}
+
+#tracker-line #stepper li.inactive-step > span {
+    color: #B3B3B3;
+}
+
+#tracker-line #stepper li.completed-step {
+    color: transparent;
+    background-color: #000;
+    border: 2px solid #000;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin-left: 2px;
+}
+
+@media (max-width: 768px) {
+    #tracker-line {
+        padding-top: 1rem;
+        width: 85vw;
+    }
+
+    #tracker-line #stepper {
+        padding-left: 0;
+    }
+
+    #tracker-line #stepper li.completed-step {
+        width: 15px;
+    }
+
+    #tracker-line #stepper li.active-step {
+        width: 15px;
+    }
+
+    #tracker-line #stepper li.inactive-step {
+        width: 15px;
+    }
+
+    #tracker-line #stepper li > span {
+        font-size: 0.6em;
+        width: 15vw;
+        margin-left: -1.3rem;
+    }
+}

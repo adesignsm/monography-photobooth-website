@@ -1,0 +1,106 @@
+#gift-cards-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0vh;
+    margin-bottom: 20rem;
+}
+
+
+#gift-cards-container .column-1 {
+    padding-top: 20rem;
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#gift-cards-container .column-1 .description {
+    width: 40vw;
+}
+
+#gift-cards-container .column-1 .description h1 {
+    font-family: var(--primary-font);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+#gift-cards-container .column-1 .description h3 {
+    font-family: var(--secondary-font);
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+#gift-cards-container .column-2 {
+    width: 50vw;
+}
+
+#gift-cards-container .column-2 #webgl-container canvas:nth-child(1) {
+    display: none !important;
+}
+
+#purchase-giftcard-button {
+    border: 5px solid #070606;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 2rem 3rem;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    transition: all .2s ease;
+    width: 20vw;
+    float: right;
+    margin-right: 17rem;
+}
+
+#purchase-giftcard-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    #gift-cards-container {
+        flex-direction: column-reverse;
+        height: 100%;
+        margin-top: 1rem;
+        margin-bottom: 10rem;
+    }
+
+    #gift-cards-container .column-1 {
+        height: 100%;
+        width: 80vw;
+        padding-top: 0;
+    }
+
+    #gift-cards-container .column-1 .description {
+        width: 100%;
+        text-align: center;
+    }
+
+    #gift-cards-container .column-1 .description h1 {
+        font-size: 2rem;
+    }
+
+    #gift-cards-container .column-1 .description h3 {
+        font-size: 1rem;
+    }
+
+    #gift-cards-container .column-2 {
+        width: 80vw;
+    }
+
+    #gift-cards-container .column-2 button {
+        width: 100%;
+        float: none;
+        font-size: 1rem;
+        margin-right: 0;
+    }
+}

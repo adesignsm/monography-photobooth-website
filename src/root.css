@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: 'Poppins', sans-serif;
+
+    --primary-color: #070606;
+    --secondary-color: #FFFDFA;
+}
+
+body, html {
+    height: 100%;
+    width: 100vw;
+    background-color: #FFFDFA;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+/*SCROLL CONTAINER CSS*/
+#main-screens {
+    overflow-y: scroll;
+    max-height: 100vh;
+}
+
+/*START SCREEN CSS*/
+.start-screen-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-screen-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10rem;
+}
+
+.start-screen-content .button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.start-screen-content .button-container button {
+    border: 5px solid #070606;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.start-screen-content .button-container button:nth-child(2) {
+    margin-left: 3rem;
+}
+
+.start-screen-content .button-container button:hover {
+    background-color: #070606;
+    color: #FFFDFA
+}
+
+.start-screen-content h1 {
+    font-family: var(--primary-font);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 6rem;
+    text-align: center;
+    color: #070606;
+}
+
+@media (max-width: 768px) {
+    .start-screen-content {
+        margin-top: -5rem;
+    }
+
+    .start-screen-content h1 {
+        font-size: 2rem;
+    }
+
+    .start-screen-content .button-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .start-screen-content .button-container button {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .start-screen-content .button-container button:nth-child(2) {
+        margin-left: 0;
+    }
+}

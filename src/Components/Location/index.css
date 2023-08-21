@@ -1,0 +1,113 @@
+#location-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0vh;
+}
+
+#location-container .column-1 {
+    padding-top: 20rem;
+    height: 100%;
+    width: 50vw;
+}
+
+#location-container .column-1 .description {
+    width: 40vw;
+}
+
+#location-container .column-1 .description h1 {
+    font-family: var(--primary-font);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+#location-container .column-1 .description h3 {
+    font-family: var(--secondary-font);
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+#location-container .column-1 {
+    margin-top: -5rem;
+}
+
+#location-container .column-2 .map iframe {
+    border: none;
+}
+
+#location-container .column-2 ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    list-style: none;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: smaller;
+}
+
+#location-container .column-2 li {
+    border: 3px solid #000;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+#location-container .column-2 li:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.selected-map {
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #location-container {
+        height: 100%;
+        flex-direction: column;
+        padding-top: 20rem;
+    }
+
+    #location-container .column-1 {
+        width: 80vw;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    #location-container .column-1 .description {
+        width: 80vw;
+    }
+    
+    #location-container .column-1 .description h1 {
+        font-size: 2rem;
+    }
+
+    #location-container .column-1 .description h3 {
+        font-size: 1rem;
+    }
+
+    #location-container .column-2 {
+        width: 80vw;
+    }
+
+    #location-container .column-2 ul {
+        flex-direction: column;
+    }
+
+    #location-container .column-2 ul > li {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    #location-container .column-2 .map > iframe {
+        width: 100%;
+    }
+}
