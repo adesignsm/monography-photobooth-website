@@ -3,7 +3,7 @@ import $ from "jquery";
 import "./index.css";
 
 const Loading = () => {
-    const [timer, setTimer] = useState(3);
+    const [timer, setTimer] = useState(1);
 
     useEffect(() => {
         let loadingInterval = setInterval(() => {
@@ -29,7 +29,6 @@ const Loading = () => {
                 <div className="snippet" data-title="dot-spin">
                     <div className="stage">
                         <div className="dot-spin"></div>
-                        <h5>{timer}</h5>
                     </div>
                 </div>
             </section>
