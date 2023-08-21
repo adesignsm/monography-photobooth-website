@@ -180,7 +180,7 @@ const DigitalFilesContainer = () => {
 const Footer = ({data}) => {
 
     useEffect(() => {
-        if (data) $("#fixed-footer").delay(5000).fadeIn(500);
+        if (data) $("#fixed-footer").delay(1000).fadeIn(500);
     }, [data]);
 
     return (
