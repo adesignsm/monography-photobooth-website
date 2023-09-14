@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react";
 
 import "./index.css";
 
+//DAVIDS COMMENTS FIX STYLING
+//INCLUDE MAP THAT HAS ALL LOCATIONS ON IT
+// underneath heading add list of all locations
+//remove location buttons
+
 const Location = () => {
     const [switchMap, setSwitchMap] = useState("BLOOR");
 
@@ -29,15 +34,14 @@ const Location = () => {
             <section id="location-container" className="section">
                 <div className="column-1">
                     <div className="description">
-                        <h1> Find one of our photobooths near you</h1>
-                        <h3> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h3>
+                        <h1> Find our photobooths near you</h1>
                     </div>
+                    <ul>
+                        <li id="mono-bloor-trigger" className="selected-map" onClick={handleMapToggle}> Bloor & Bathurst </li>
+                        <li id="mono-north-trigger" onClick={handleMapToggle}> North York </li>
+                    </ul>
                 </div>
                 <div className="column-2">
-                    <ul>
-                        <li id="mono-bloor-trigger" className="selected-map" onClick={handleMapToggle}> Monography Bloor </li>
-                        <li id="mono-north-trigger" onClick={handleMapToggle}> Monography North York </li>
-                    </ul>
                     <div className="map">
                         {switchMap === "NORTHYORK" ? 
                             <iframe 

@@ -1,11 +1,13 @@
 #header {
+    position: sticky;
+    top: 0;
     padding-bottom: 2rem;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(40px);
 }
 
 #tracker-line {
-    display: none;
-    padding-top: 5rem;
+    padding-top: 2.5rem;
     padding-bottom: 1rem;
     width: 60vw;
     margin: 0 auto;
@@ -19,6 +21,7 @@
 
 #tracker-line #stepper li {
     color: #000;
+    cursor: pointer;
 }
 
 #tracker-line #stepper li > span {
@@ -31,7 +34,7 @@
     font-weight: 900;
     font-size: 12px;
     margin-left: -2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-align: center;
 }
 

@@ -20,7 +20,7 @@ const FeaturedStrips = () => {
 
         axios.get('https://monography.net/template-strips').then(response => {
             const slicedData = response.data.slice(-2);
-            setStripArray([slicedData[0].path, slicedData[0].fullPath, slicedData[1].path, slicedData[1].fullPath]);
+            setStripArray([slicedData[1].path, slicedData[1].fullPath]);
         }).catch(error => {
             console.error(error);
         });
